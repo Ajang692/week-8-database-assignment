@@ -1,0 +1,34 @@
+-- ==========================================
+-- Week 8 Assignment: MySQL Database Backup
+-- ==========================================
+
+-- Question 1: Creating a Complete Database Backup
+-- Command:
+-- mysqldump -u root -p sales > sales_backup.sql
+--
+-- This command creates a complete backup of the sales
+-- database, including its table structures and data.
+-- The -u root option specifies the MySQL username.
+-- The -p option prompts for the database password.
+-- The > operator saves the backup into sales_backup.sql.
+--
+-- Regular database backups are important because they
+-- protect data against accidental deletion, corruption,
+-- hardware failure, and other unexpected problems.
+-- Backups help restore data when needed.
+
+
+-- Question 2: Backing Up All Databases
+-- Command:
+-- mysqldump -u root -p --all-databases > all_databases_backup.sql
+--
+-- This command backs up all databases on the MySQL server.
+-- The --all-databases option exports every database.
+-- The -u root option specifies the MySQL username.
+-- The -p option prompts for the database password.
+-- The > operator saves the backup into
+-- all_databases_backup.sql.
+--
+-- Backing up all databases before migration is important
+-- because it helps transfer databases, structures, and
+-- data safely to another server and prevents data loss.
